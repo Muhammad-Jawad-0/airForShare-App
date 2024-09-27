@@ -327,6 +327,7 @@ $primary-dark-color: #745dff;
 
   .drop-zone {
     height: 50%;
+    margin-left: 10px;
   }
 
   .file-list div {
@@ -348,6 +349,9 @@ $primary-dark-color: #745dff;
 
   .drop-zone {
     height: 40%;
+    margin-left: 40px;
+    width: 100px !important;
+    // margin-left: 50px;
   }
 
   .file-list div {
@@ -362,6 +366,30 @@ $primary-dark-color: #745dff;
     margin-right: 70px;
     gap: 10px;
   }
+
+
+// .add-more-files {
+//   line-height: 10px;
+//   svg {
+//     margin-bottom: 0px !important;
+//     font-size: 24px !important;
+//     color: $primary-dark-color !important;
+//   }
+//   p {
+//     margin: 0px;
+//     font-size: 14px;
+//     font-weight: bold;
+//   }
+//   span {
+//     font-size: 10px;
+//     color: rgba(158, 161, 161, 0.9) !important;
+//   }
+// }
+
+// .dropzone{
+//   gap: 10px;
+//   margin-right: 20px;
+// }
 }
 
 @media only screen and (max-width: 480px) {
@@ -377,6 +405,8 @@ $primary-dark-color: #745dff;
 
   .drop-zone {
     height: 30%;
+    width: 90px !important;
+    margin-left: 50px;
   }
 
   .file-list div {

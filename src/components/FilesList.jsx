@@ -94,6 +94,7 @@ function FilesList({ tempFiles, files, onDrop }) {
 
       <div>
         <DropZone
+        className="dropzone"
           onDrop={onDrop}
           textElement={
             <span className="add-more-files">

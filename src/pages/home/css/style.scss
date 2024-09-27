@@ -367,11 +367,11 @@ h1 {
 
 @media only screen and (max-width: 768px) {
 
-  body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  // body{
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
   .container {
     width: 90%;
   }
@@ -400,11 +400,25 @@ h1 {
   .text-section h1 {
     font-size: 32px;
   }
+
+  .files-btn{
+    display: flex !important;
+    flex-direction: column;
+    margin-right: 100px;
+    gap: 10px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .container {
-    width: 95%;
+    width: 100%;
+    margin: auto;
   }
 
   .menu-bar ul {
@@ -435,6 +449,13 @@ h1 {
   textarea {
     width: 100%;
     min-height: 150px;
+  }
+
+  .files-btn{
+    display: flex !important;
+    flex-direction: column;
+    margin-right: 100px;
+    gap: 10px;
   }
 }
 
