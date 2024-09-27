@@ -1,3 +1,5 @@
+import "./index.scss"
+
 
 function ThemeButton({ disabled ,tittle , onClick}) {
   return (
