@@ -348,9 +348,9 @@ $primary-dark-color: #745dff;
   }
 
   .drop-zone {
-    height: 40%;
-    margin-left: 40px;
-    width: 100px !important;
+    height: 120px !important;
+    margin-left: 30px;
+    width: 75% !important;
     // margin-left: 50px;
   }
 
@@ -392,7 +392,7 @@ $primary-dark-color: #745dff;
 // }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
   .text-area {
     font-size: 16px;
     padding: 4px 0;
@@ -405,20 +405,29 @@ $primary-dark-color: #745dff;
 
   .drop-zone {
     height: 30%;
-    width: 90px !important;
-    margin-left: 50px;
+    width: 80% !important;
+    margin-left: -12px;
+    // margin: auto;
   }
 
+.drop-zone div{
+  // width: 100%;
+  font-size: 10px;
+  font-weight: 700 !important;
+  margin-left: 0px !important;
+}
+
   .file-list div {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 80px;
+    margin-left:1px;
   }
 
   .save-btn-section{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-right: 70px;
+    margin-right: 70px; //////////////////////////////////////////
     gap: 10px;
   }
 }

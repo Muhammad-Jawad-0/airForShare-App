@@ -92,24 +92,47 @@ function HomePage() {
     setIsText(false);
   };
 
-  const deleteAllFiles = async () => {
-    await remove(ref(database, "file-sharing"));
-    await remove(ref(storage , "files/"))
-    // Create a reference to the file to delete
-    const desertRef = ref(storage, "files");
+  // const deleteAllFiles = async () => {
+  //   await remove(ref(database, "file-sharing"));
+  //   await remove(ref(storage , "files"))
+  //   // Create a reference to the file to delete
+  //   const desertRef = ref(storage, "files");
     
-    // Delete the file
-    await deleteObject(desertRef)
-    .then(() => {
-      // File deleted successfully
-      setFiles([]);
-      console.log("deleted done")
-      })
-      .catch((error) => {
-        // Uh-oh, an error occurred!
-        console.log(error, "<<---- err")
-      });
-  };
+  //   // Delete the file
+  //   await deleteObject(desertRef)
+  //   .then(() => {
+  //     // File deleted successfully
+  //     setFiles([]);
+  //     console.log("deleted done")
+  //     })
+  //     .catch((error) => {
+  //       // Uh-oh, an error occurred!
+  //       console.log(error, "<<---- err")
+  //     });
+  // };
+
+  const deleteAllFiles = async () => {
+    try {
+        // Remove data from Firebase Realtime Database
+        await remove(ref(database, "file-sharing"));
+        
+        // Reference to the file in Firebase Storage
+        // const desertRef = ref(storage, "files");
+        // const desertRef = ref(storage, "files/");
+
+        
+        // Delete the file from Firebase Storage
+        // await deleteObject(desertRef);
+        
+        // If everything is successful, clear the files and log the result
+        setFiles([]);
+        console.log("deleted done");
+    } catch (error) {
+        // Log any errors that occur
+        console.log(error, "<<---- err");
+    }
+};
+
 
   const downloadAllFiles = () => {
     const filename = "All-Files";
